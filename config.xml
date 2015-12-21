@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" 
+		id="com.metalicious.PhoneGapTest" versionCode="1" version="1.0">
+	
+	<!-- cfg documentation http://docs.phonegap.com/en/4.0.0/config_ref_index.md.html -->
+	<name>PhoneGapTest</name>
+	<description>
+		A sample PhoneGap App
+	</description>
+	<author href="test.org" email ="support@test.org">
+		metalicious
+	</author>
+		<gap:platform name="android" />
+		<gap:platform name="ios" />
+		<gap:platform name="winphone" />
+		<preference name="orientantion" value="default" />
+		<preference name="webviewbounce" value="false" />
+		<preference name="DisallowOverscroll" value="true" />
+		<preference name="disallowOverscroll" value="true" />
+		
+		<!--iOS preferences -->
+		<preference name="exit-on-suspend" value="false" />
+		<preference name="prerendered-icon" value="false" />
+		
+		<!--Android preferences -->
+		<preference name="android-minSdkVersion" value="14" />
+		<preference name="android-installLocation" value="auto" />
+		<preference name="BackgroundColor" value="0xffffffff" />
+		<preference name="KeepRunning" value="true" />
+		
+		<!--Android permissions -->
+		<feature name="http://api.phonegap.com/1.0/geolocation" />
+		<feature name="http://api.phonegap.com/1.0/network" />
+		
+		
+		<!--plugins -->
+		<gap:plugin name="org.apache.cordova.network-information" />
+		<gap:plugin name="org.apache.cordova.geolocation" />
+		
+		<accress origin="*" subdomains="true" />
+		
+		
+		
+</widget>
